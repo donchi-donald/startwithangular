@@ -4,16 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyFirstComponent } from './my-first/my-first.component';
+import { AppareilComponent } from './appareil/appareil.component';
+import { FormsModule } from '@angular/forms'; /*two-way-binding*/
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFirstComponent
+    MyFirstComponent,
+    AppareilComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule /*two-way-binding*/
   ],
   providers: [],
   bootstrap: [AppComponent]
